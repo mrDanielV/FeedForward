@@ -1,0 +1,27 @@
+{
+    "name": "SexWHBatch",
+    "speed": 0.02,
+    "momentum": 0.75,
+    "activation": "leakyrelu",
+    "activationByLayers": {
+        "2": "sigmoid"
+    },
+    "inputs": 2,
+    "scaleInputs": [
+        {
+            "min": 140.0773357,
+            "max": 199.4616545
+        },
+        {
+            "min": 35.15817411,
+            "max": 116.0377898
+        },
+        {
+            "min": 0,
+            "max": 1
+        }
+    ],
+    "layers": [ 10,3,1 ],
+    "bias": true,
+    "biasInput": true
+}

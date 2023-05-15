@@ -1,0 +1,27 @@
+{
+    "name": "SexWH",
+    "speed": 0.07,
+    "momentum": 0,
+    "activation": "leakyrelu",
+    "activationByLayers": {
+        "2": "sigmoid"
+    },
+    "inputs": 2,
+    "scaleInputs": [
+        {
+            "min": 138.7268189,
+            "max": 199.6982899
+        },
+        {
+            "min": 31.28459415,
+            "max": 113.3543234
+        },
+        {
+            "min": 0,
+            "max": 1
+        }
+    ],
+    "layers": [ 8,2,1 ],
+    "bias": true,
+    "biasInput": true
+}

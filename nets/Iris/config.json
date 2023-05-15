@@ -1,0 +1,14 @@
+{
+    "name": "Iris",
+    "speed": 0.003,
+    "momentum": 0,
+    "activation": "leakyrelu",
+    "activationByLayers": {
+        "1": "softmax"
+    },
+    "inputs": 4,
+    "scaleInputs": false,
+    "layers": [ 10,3 ],
+    "bias": true,
+    "biasInput": true
+}

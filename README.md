@@ -3,6 +3,48 @@ Activation functions: sigmoid, hyperbolic tangent, ReLu, Leaky ReLu, softmax, li
 Loss functions: MSE, CrossEntropy
 Backpropagation training with gradient descent weight adjustment
 
+# Example
+require_once 'includer.php';
+
+// Network configuration
+$seed = null;
+$conf = [
+	'name' => 'Iris',
+	'speed' => 0.003,
+	'momentum' => 0,
+	'activation' => 'leakyrelu',
+	'activationByLayers' => [1 => 'softmax'],
+	'inputs' => 4,
+	'layers' => [10, 3],
+	'bias' => true
+];
+
+// Init Network
+$net = new FF($conf);
+$seed = $net->generateWs('auto', $seed);
+//$net->printNet();
+
+// Educate Network
+$res = $net->educate($dataSet, 200, ['shuffle' => true]);
+if($net->isErrors()){
+	$net->printErrors();
+	die();
+}
+
+// Graph of error change during training
+$netServ = new NetService($net);
+$graf = $netServ->graphEducateErrors();
+echo $graf;
+echo '<br>';
+
+// Checking on the test set
+echo '<br><br>TEST DATA<br>';
+$res = $net->test($testSet);
+
+// Use
+$net = new FF('Iris');
+$res = $net->predict($input);
+
 # Network Configuration Format
 [
 	'name' => <string>, // Network name, used to store settings and weights

@@ -1,0 +1,12 @@
+{
+    "name": "XOR_Sigmoid_BIAS",
+    "speed": 2.5,
+    "momentum": 0.93,
+    "activation": "sigmoid",
+    "activationByLayers": [],
+    "inputs": 2,
+    "scaleInputs": false,
+    "layers": [ 2,2,1 ],
+    "bias": true,
+    "biasInput": true
+}

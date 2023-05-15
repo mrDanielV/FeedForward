@@ -1,0 +1,12 @@
+{
+    "name": "XOR_Threshold",
+    "speed": 0.1,
+    "momentum": 0,
+    "activation": "threshold",
+    "activationByLayers": [],
+    "inputs": 2,
+    "scaleInputs": false,
+    "layers": [ 2,1 ],
+    "bias": false,
+    "biasInput": null
+}

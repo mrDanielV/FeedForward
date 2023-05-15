@@ -1,0 +1,12 @@
+{
+    "name": "XOR_Relu",
+    "speed": 0.1,
+    "momentum": 0,
+    "activation": "relu",
+    "activationByLayers": [],
+    "inputs": 2,
+    "scaleInputs": false,
+    "layers": [ 2,1 ],
+    "bias": false,
+    "biasInput": null
+}
