@@ -60,6 +60,11 @@ echo $graf;
 $res = $net->test($testSet);
 ````
 
+### Saving
+````
+$net->save();
+````
+
 ### Use
 ````
 $net = new FF('Iris');
@@ -125,7 +130,7 @@ educate ($dataset, $eraN, $options, $testset) - complete network training course
 test ($testset, $options) - test the network on the test set, fixing the error (minimum, average, maximum)
 ````
 
-## The educate($dataset, $eraN, $options, $testset) function is a complete tutorial.
+## The educate($dataset, $eraN, $options, $testset) function - full neural network training course
 ````
 $dataset <array> - training indexed two-dimensional array [i-row, j-column],
 
